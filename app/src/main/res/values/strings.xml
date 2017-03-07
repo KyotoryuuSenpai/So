@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">So</string>
+    <string name="sortir">Sortir</string>
+    <string name="animacions">ANIMACIONS</string>
+    <string name="c_mera">Càmera</string>
+    <string name="geolocalitzaci">Geolocalització</string>
+    <string name="so">So</string>
+    <string name="v_deo">Vídeo</string>
+    <string name="enrere">Enrere</string>
+    <string name="fotogrames">Fotogrames</string>
+    <string name="interpolaci">Interpolació</string>
+    <string name="enrereFotogrames">Enrere</string>
+    <string name="clickmov">clickmov</string>
+    <string name="title_activity_fotogrames">Fotogrames</string>
+    <string name="enrere2">Enrere</string>
+    <string name="enrere4">Enrere</string>
+    <string name="posicionament_gps">Posicionament GPS</string>
+    <string name="events_mapa">Events Mapa</string>
+</resources>
