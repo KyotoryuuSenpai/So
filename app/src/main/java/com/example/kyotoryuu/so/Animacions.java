@@ -16,6 +16,7 @@ public class Animacions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animacions);
 
+        //Identificacio buttons
         buttonInterpolacio = (Button)findViewById(R.id.buttonInterpolacio);
         buttonFotogrames = (Button)findViewById(R.id.buttonFotogrames);
         buttonEnrere = (Button)findViewById(R.id.buttonEnrere);
