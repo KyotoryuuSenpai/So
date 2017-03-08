@@ -19,6 +19,30 @@ public class Geolocalitzacio extends AppCompatActivity {
         buttonEvents = (Button)findViewById(R.id.buttonEvents);
         buttonEnrere = (Button)findViewById(R.id.buttonEnrere);
 
+        buttonGPS.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(Geolocalitzacio.this,PosicionamentGPS.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonGoogle.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(Geolocalitzacio.this,GoogleMaps.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonEvents.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(Geolocalitzacio.this,EventsMapa.class);
+                startActivity(intent);
+            }
+        });
+
         buttonEnrere.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

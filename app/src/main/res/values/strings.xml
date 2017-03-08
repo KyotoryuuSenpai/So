@@ -16,4 +16,7 @@
     <string name="enrere4">Enrere</string>
     <string name="posicionament_gps">Posicionament GPS</string>
     <string name="events_mapa">Events Mapa</string>
+    <string name="enrere5">Enrere</string>
+    <string name="enrere6">Enrere</string>
+    <string name="textview">TextView</string>
 </resources>

@@ -20,8 +20,22 @@
         <activity android:name=".Animacions" />
         <activity android:name=".Interpolacio" />
         <activity android:name=".Fotogrames" />
-        <activity android:name="com.example.kyotoryuu.hilos.Geolocalitzacio" />
-        <activity android:name=".Geolocalitzacio"></activity>
+        <activity android:name=".Geolocalitzacio" />
+        <activity android:name=".PosicionamentGPS" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBxkHu8YrMZh4I23Y7goVwUY4yGGZzki-Q" />
+
+        <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true" />
+
+        <activity android:name=".GoogleMaps" />
+        <activity android:name=".EventsMapa"></activity>
     </application>
 
 </manifest>
