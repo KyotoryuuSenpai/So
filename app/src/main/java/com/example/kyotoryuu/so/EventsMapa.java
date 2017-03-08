@@ -22,6 +22,7 @@ public class EventsMapa extends AppCompatActivity implements OnMapReadyCallback 
     private GoogleMap mapa;
     Button buttonEnrere;
     TextView textInfo;
+
     Marker marker;
     MarkerOptions options;
     CameraUpdate update;
