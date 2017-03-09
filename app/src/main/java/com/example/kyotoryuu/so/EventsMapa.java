@@ -21,7 +21,6 @@ public class EventsMapa extends AppCompatActivity implements OnMapReadyCallback 
 
     private GoogleMap mapa;
     Button buttonEnrere;
-    TextView textInfo;
 
     Marker marker;
     MarkerOptions options;
@@ -34,9 +33,7 @@ public class EventsMapa extends AppCompatActivity implements OnMapReadyCallback 
         setContentView(R.layout.activity_google_maps);
 
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
-
         mapFragment.getMapAsync(this);
-        textInfo = (TextView)findViewById(R.id.textInfo);
         buttonEnrere = (Button)findViewById(R.id.buttonEnrere);
 
         buttonEnrere.setOnClickListener(new View.OnClickListener(){

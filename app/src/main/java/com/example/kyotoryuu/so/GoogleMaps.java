@@ -7,6 +7,7 @@ import android.view.View;
 import android.webkit.GeolocationPermissions;
 import android.widget.Button;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -19,6 +20,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class GoogleMaps extends AppCompatActivity implements OnMapReadyCallback {
 
     Button buttonEnrere;
+    MarkerOptions options;
+    CameraUpdate update;
     private GoogleMap mapa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,8 @@ public class GoogleMaps extends AppCompatActivity implements OnMapReadyCallback 
         LatLng amsterdam = new LatLng(52,5);
         mapa.addMarker(new MarkerOptions().position(amsterdam).title("Posició Amsterdam"));
         mapa.moveCamera(CameraUpdateFactory.newLatLng(amsterdam));
+        update = CameraUpdateFactory.newLatLngZoom(amsterdam, 5);
+        mapa.animateCamera(update);
 
     }
 
