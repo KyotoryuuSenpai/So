@@ -10,12 +10,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.kyotoryuu.so.PosicionamentGPS">
 
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.MapFragment"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        tools:ignore="UselessParent">
 
+
+        <TextView
+            android:id="@+id/textPosicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Posició"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:text="@string/enrere7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonEnrere" />
+    </LinearLayout>
 </RelativeLayout>
