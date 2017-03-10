@@ -39,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonSortir.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                System.exit(0);
+            }
+        });
+
     }
 
 }
