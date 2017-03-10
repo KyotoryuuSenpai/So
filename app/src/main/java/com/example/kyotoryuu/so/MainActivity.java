@@ -9,6 +9,7 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Variables
     Button buttonAnimacions, buttonGeolocalitzacio, buttonCamera, buttonSo, buttonVideo, buttonSortir;
 
     @Override
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Inicialització i execució de buttons.
         buttonAnimacions = (Button)findViewById(R.id.buttonAnimacions);
         buttonGeolocalitzacio = (Button)findViewById(R.id.buttonGeolocalitzacio);
         buttonCamera = (Button)findViewById(R.id.buttonCamera);
@@ -35,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this,Geolocalitzacio.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonCamera.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this,Camera.class);
                 startActivity(intent);
             }
         });

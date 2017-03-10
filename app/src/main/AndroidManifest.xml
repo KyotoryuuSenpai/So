@@ -3,6 +3,9 @@
     package="com.example.kyotoryuu.so">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:allowBackup="true"
@@ -35,7 +38,8 @@
             android:required="true" />
 
         <activity android:name=".GoogleMaps" />
-        <activity android:name=".EventsMapa"></activity>
+        <activity android:name=".EventsMapa" />
+        <activity android:name=".Camera"></activity>
     </application>
 
 </manifest>

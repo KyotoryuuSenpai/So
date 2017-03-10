@@ -7,13 +7,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class Geolocalitzacio extends AppCompatActivity {
-
+    //Variables
     Button buttonGPS, buttonGoogle, buttonEvents, buttonEnrere;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geolocalitzacio);
 
+        //Inicialització i execució dels buttons.
         buttonGPS = (Button)findViewById(R.id.buttonGPS);
         buttonGoogle = (Button)findViewById(R.id.buttonGoogle);
         buttonEvents = (Button)findViewById(R.id.buttonEvents);

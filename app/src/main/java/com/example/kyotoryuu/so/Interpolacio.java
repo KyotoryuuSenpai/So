@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class Interpolacio extends AppCompatActivity {
-
+    //Variables
     Button buttonEnrere;
 
     @Override
@@ -19,11 +19,11 @@ public class Interpolacio extends AppCompatActivity {
         setContentView(R.layout.activity_interpolacio);
 
         ImageView imatge = (ImageView)findViewById(R.id.imageInterpolacio);
+        //Creem la animació i l'executem.
         Animation animacioDoge = AnimationUtils.loadAnimation(this, R.anim.venir);
         imatge.startAnimation(animacioDoge);
 
         buttonEnrere = (Button)findViewById(R.id.buttonEnrere);
-
         buttonEnrere.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

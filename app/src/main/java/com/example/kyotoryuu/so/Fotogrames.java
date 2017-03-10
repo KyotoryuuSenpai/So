@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class Fotogrames extends AppCompatActivity {
-
+    //Variables
     Button buttonEnrere;
 
     @Override
@@ -17,12 +17,13 @@ public class Fotogrames extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fotogrames);
 
-        buttonEnrere = (Button)findViewById(R.id.buttonEnrere);
-
         ImageView imageView = (ImageView) findViewById(R.id.imageFotogrames);
+
+        //Asignem la animació al imageView i la iniciem.
         AnimationDrawable animacio = (AnimationDrawable) imageView.getDrawable();
         animacio.start();
 
+        buttonEnrere = (Button)findViewById(R.id.buttonEnrere);
         buttonEnrere.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

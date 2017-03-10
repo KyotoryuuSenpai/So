@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.ToggleButton;
 
 public class Animacions extends AppCompatActivity {
-
+    //Variables
     Button buttonInterpolacio, buttonFotogrames, buttonEnrere;
 
     @Override
@@ -16,7 +16,7 @@ public class Animacions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animacions);
 
-        //Identificacio buttons
+        //Identificacio buttons.
         buttonInterpolacio = (Button)findViewById(R.id.buttonInterpolacio);
         buttonFotogrames = (Button)findViewById(R.id.buttonFotogrames);
         buttonEnrere = (Button)findViewById(R.id.buttonEnrere);
