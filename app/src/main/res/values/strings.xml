@@ -26,4 +26,11 @@
     <string name="kmikm">kmikm</string>
     <string name="reduida">REDUIDA</string>
     <string name="enrere8">enrere</string>
+    <string name="gravant">gravant</string>
+    <string name="gravar">gravar</string>
+    <string name="gravar2">gravar</string>
+    <string name="reproduir">reproduir</string>
+    <string name="buttonenrere">ButtonEnrere</string>
+    <string name="enrere9">Enrere</string>
+    <string name="enrere10">Enrere</string>
 </resources>
